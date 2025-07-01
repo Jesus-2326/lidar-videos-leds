@@ -28,7 +28,7 @@ current_video = default_video
 video_en_progreso = False
 
 # Configuración de la tira LED
-LED_PIN = board.D21  # Pin GPIO que usas
+LED_PIN = board.D18  # Pin GPIO que usas
 NUM_LEDS = 509       # Número de LEDs en la tira
 BRIGHTNESS = 1       # Brillo de los LEDs
 

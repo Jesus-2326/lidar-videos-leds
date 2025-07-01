@@ -1,0 +1,7 @@
+pygame
+pyserial
+opencv-python
+adafruit-blinka
+rpi_ws281x
+adafruit-circuitpython-neopixel
+RPi.GPIO
