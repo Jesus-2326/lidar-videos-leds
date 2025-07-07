@@ -7,7 +7,7 @@ import threading
 import board
 import neopixel
 
-# Configurar puerto serie
+# Configurar puerto series
 ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
 print("Conectado al puerto serie. Leyendo datos...")
 
@@ -17,11 +17,11 @@ screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 pygame.mouse.set_visible(False)
 
 # Lista de videos por zonas (1 a 4)
-video_files = ["1.mp4", "2.mp4", "3.mp4", "4.mp4"]  # Asegúrate de que estos archivos existan
+video_files = ["fanta.mp4", "spritee.mp4", "3.mp4", "4.mp4"]  # Asegúrate de que estos archivos existan
 videos = [cv2.VideoCapture(file) for file in video_files]
 
 # Video por defecto
-default_video = cv2.VideoCapture("default.mp4")
+default_video = cv2.VideoCapture("coca.mp4")
 
 # Variables de control
 current_video = default_video
@@ -40,13 +40,13 @@ lim3 = 384
 lim4 = 509
 
 # Colores por zonas
-colores_zonas = [(255, 0, 0),  # Zona 1: Rojo
-                 (0, 255, 0),  # Zona 2: Verde
-                 (0, 0, 255),  # Zona 3: Azul
-                 (255, 255, 0)]  # Zona 4: Amarillo
+colores_zonas = [(255, 0, 0),  # Zona 1: Fanta Naranja
+                 (0, 255, 0),  # Zona 2: Sprtee Verde
+                 (0, 255, 0),  # Zona 3: Verde
+                 (255, 255, 255)]  # Zona 4: Amarillo
 
 # Color por defecto (por ejemplo, blanco suave)
-color_por_defecto = (0, 255, 255)
+color_por_defecto = (255, 255, 255)
 
 strip = neopixel.NeoPixel(LED_PIN, NUM_LEDS, brightness=BRIGHTNESS, auto_write=False)
 
