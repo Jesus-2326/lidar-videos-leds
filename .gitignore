@@ -1,0 +1,13 @@
+# Entorno virtual
+venv311/
+__pycache__/
+*.pyc
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Otros temporales
+*.log
+*.bak
+
