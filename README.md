@@ -1,17 +1,12 @@
-# lidar-videos-leds
-This project change the image and leds according with the zone detected by a lidar sensor
+# Play Video
+This project only play a video on loop
 
-### Clone the repository
-
+### Activate Environment and run SH
 ```bash
-git clone https://github.com/Jesus-2326/lidar-videos-leds.git
+/usr/bin/mpv --fs --loop /home/admin/Desktop/playvideo/coca.mp4 
 ```
-
-### Activate Environment
-./run.sh
-
 
 ### KIll the process
 ```bash
-pkill -f lidarVideosLeds5.py
+pkill -f main.py
 ```
